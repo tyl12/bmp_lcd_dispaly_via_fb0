@@ -1,0 +1,15 @@
+LOCAL_PATH:= $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES:= lcd.cpp
+
+LOCAL_MODULE:= lcd
+LOCAL_SHARED_LIBRARIES:= libutils libcutils
+
+LOCAL_C_INCLUDES := $(KERNEL_HEADERS)
+
+LOCAL_CFLAGS :=
+
+LOCAL_MODULE_TAGS := eng
+include $(BUILD_EXECUTABLE)
